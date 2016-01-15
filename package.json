@@ -1,0 +1,38 @@
+{
+  "name": "timeengine-react",
+  "version": "1.0.0",
+  "description": "TimeEngine Extension for Stateless React programming without props and state",
+  "main": "timeengine-react.js",
+  "scripts": {
+    "test": "babel timeengine-react.jsx -o timeengine-react.js;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimeEngine/timeengine-react.git"
+  },
+  "keywords": [
+    "React",
+    "stateless",
+    "timeengine",
+    "FRP",
+    "reactive",
+    "functional"
+  ],
+  "author": "Ken Okabe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimeEngine/timeengine-react/issues"
+  },
+  "homepage": "https://github.com/TimeEngine/timeengine-react#readme",
+  "dependencies": {
+    "timeengine": "^5.0.0",
+    "react": "^0.14"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "eslint": "^1.10.3",
+    "webpack": "^1.12.11"
+  }
+}
