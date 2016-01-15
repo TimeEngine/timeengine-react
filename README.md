@@ -36,7 +36,7 @@ var Timer = React.createClass({
 
 # After
 
-### A Stateless functional Component (1 line code!!)
+### A Stateless functional Component (Single statement code!!)
 
 ```js
 // `immutableSeqMap` is to map Immutable-js infinite Sequence
