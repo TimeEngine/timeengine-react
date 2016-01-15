@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/TimeEngine/timeengine-react#readme",
   "dependencies": {
-    "timeengine": "^5.0.0",
-    "react": "^0.14"
+    "timeengine": "*",
+    "react": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.4.0",
