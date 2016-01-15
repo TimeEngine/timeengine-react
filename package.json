@@ -1,6 +1,6 @@
 {
   "name": "timeengine-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TimeEngine Extension for Stateless React programming without props and state",
   "main": "timeengine-react.js",
   "scripts": {
