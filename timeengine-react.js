@@ -8,13 +8,15 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+/*global React __ Immutable __Component*/
 (function () {
   'use strict';
 
-  var React = require('react');
-  var __ = require('timeengine');
+  //var React = require('react');
+  //var __ = require('timeengine');
 
   //***React state with life cycle is stateless sequence*****
+
   var __Component = function __Component(__seqEl) {
     var SeqComponent = function (_React$Component) {
       _inherits(SeqComponent, _React$Component);
