@@ -29,7 +29,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
         _this.state = {
           seqEl: __seqEl.t
         };
-        var timeseq = __seqEl.tMap(function (val) {
+        var timeseq = __seqEl.__(function (val) {
           _this.setState({
             seqEl: val
           });

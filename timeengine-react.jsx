@@ -14,12 +14,11 @@
         this.state = {
           seqEl: __seqEl.t
         };
-        var timeseq = __seqEl
-          .tMap((val) => {
-            this.setState({
-              seqEl: val
-            });
+        var timeseq = __seqEl.__((val) => {
+          this.setState({
+            seqEl: val
           });
+        });
       }
       render() {
         return (<span>{this.state.seqEl}</span>);

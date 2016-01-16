@@ -39,15 +39,14 @@ var Timer = React.createClass({
 ### A Stateless functional Component (Single statement code!!)
 
 ```js
-// `immutableSeqMap` is to map Immutable-js infinite Sequence
-//                          onto TimeEngine infinite Sequence
+// `.intervalSeq` is to map Immutable-js infinite Sequence
+//                       onto TimeEngine infinite Sequence
 // map natural numbers sequence onto intervalSeq(1000)
 const TimerComponent = () => {
-  return __Component(__ //timeengine immutable instance
-    .time(__.INTERVAL, 1000) //1000msec time resolution
-    .immutableSeqMap(Immutable.Range()) //natural numbers
-    .tMap((count) => (__.log.t = count)) //console.log
-    .tMap((count) => (<div>Timer : {count}</div>)));
+  return __Component(__
+    .intervalSeq(Immutable.Range(), 1000)
+    .__((count) => (__.log.t = count)) //console.log
+    .__((count) => (<div>Timer : {count}</div>)));
 };
 ```
 
@@ -55,7 +54,7 @@ const TimerComponent = () => {
 ![](http://timeengine.github.io/images/formula.png)
 
 ```js
-  const PhysicsComponent = () => {
+const PhysicsComponent = () => {
   //-------Physics-------------------------------
   //MKS system of units
   const V0 = 85.0; // m/s
@@ -64,14 +63,13 @@ const TimerComponent = () => {
   const G = 9.8; //gravity const
 
   //10msec time resolution
-  //t seconds elapsed since t0
-  const t = __.time(__.INTERVAL, 10).tMap((tt, t0) => (tt - t0) / 1000);
-  const x = t.tMap((t) => V0 * Math.cos(THETA) * t);
-  const y = t.tMap((t) => V0 * Math.sin(THETA) * t - 1 / 2 * G * Math.pow(t, 2));
+  const t = __.intervalSeq(Immutable.Range(), 10);
+  const x = t.__((t) => V0 * Math.cos(THETA) * t);
+  const y = t.__((t) => V0 * Math.sin(THETA) * t - 1 / 2 * G * Math.pow(t, 2));
   //==============================================================
   const Drawscale = 2; //2 dot = 1 meter
   const __seqEl = __([x, y]) //atomic update
-    .tMap(([x, y]) => (
+    .__(([x, y]) => (
     <div>
       <svg height = "100%"  width = "100%">
           <circle r="3" fill="red"
