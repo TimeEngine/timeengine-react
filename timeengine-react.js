@@ -9,6 +9,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /*global React __ Immutable __Component*/
+
+//this file need to bre transpiled to js
+//npm test
 (function () {
   'use strict';
 
@@ -38,6 +41,11 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
       }
 
       _createClass(SeqComponent, [{
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+          delete this.__seqEl;
+        }
+      }, {
         key: 'render',
         value: function render() {
           return React.createElement(

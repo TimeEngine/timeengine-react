@@ -1,4 +1,7 @@
 /*global React __ Immutable __Component*/
+
+//this file need to bre transpiled to js
+//npm test
 (() => {
   'use strict';
 
