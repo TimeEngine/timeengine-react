@@ -20,6 +20,9 @@
           });
         });
       }
+      componentWillUnmount() {
+        delete this.__seqEl;
+      }
       render() {
         return (<span>{this.state.seqEl}</span>);
       };
