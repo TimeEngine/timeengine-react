@@ -3,7 +3,7 @@
 <img src="http://timeengine.github.io/images/timeengine-logo.svg" width="200">
 
 
-TimeEngine([timeengine](https://www.npmjs.com/package/timeengine)) Extension for Stateless React programming without props and state
+TimeEngine ( [timeengine](https://www.npmjs.com/package/timeengine) ) Extension for Stateless React programming without props and state
 
 See
 [http://timeengine.github.io](http://timeengine.github.io)
