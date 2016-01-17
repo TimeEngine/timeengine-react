@@ -43,7 +43,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
       _createClass(SeqComponent, [{
         key: 'componentWillUnmount',
         value: function componentWillUnmount() {
-          delete this.__seqEl;
+          __seqEl.done = 1;
         }
       }, {
         key: 'render',

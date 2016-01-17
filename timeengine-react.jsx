@@ -24,7 +24,7 @@
         });
       }
       componentWillUnmount() {
-        delete this.__seqEl;
+        __seqEl.done = 1;
       }
       render() {
         return (<span>{this.state.seqEl}</span>);
