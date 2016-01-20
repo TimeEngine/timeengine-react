@@ -59,31 +59,27 @@ const TimerComponent = () => {
 
 ```js
 const PhysicsComponent = () => {
-  //-------Physics-------------------------------
   //MKS system of units
   const V0 = 85.0; // m/s
   const DEG = 40; //degree
   const THETA = DEG / 180 * Math.PI; //radian
   const G = 9.8; //gravity const
-
-  //10msec time resolution
-  //t seconds elapsed
+  //t seconds elapsed 0msec time resolution
   const t = __
     .intervalSeq(Immutable.Range(), 10)
     .__((count) => (count * 10 / 1000));
-  const x = t.__((t) => V0 * Math.cos(THETA) * t);
-  const y = t.__((t) => V0 * Math.sin(THETA) * t - 1 / 2 * G * Math.pow(t, 2));
+  const x = __([t]).__(([t]) => V0 * Math.cos(THETA) * t);
+  const y = __([t]).__(([t]) => V0 * Math.sin(THETA) * t - 1 / 2 * G * Math.pow(t, 2));
   //==================================
   const Drawscale = 1; //1 dot = 1 meter
   const __seqEl = __([x, y]) //atomic update
     .__(([x, y]) => (
     <div>
       <svg height = "250"  width = "100%">
-          <circle r="3" fill="red"
+          <circle r="2" fill="red"
       cx = {50 + x * Drawscale} cy = {250 - y * Drawscale}/>
       </svg>
     </div>));
-
   return __Component(__seqEl);
 };
 ```
