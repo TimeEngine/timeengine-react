@@ -5,9 +5,21 @@
 
 TimeEngine ( [timeengine](https://www.npmjs.com/package/timeengine) ) Extension for Stateless React programming without props and state
 
-See
-[http://timeengine.github.io](http://timeengine.github.io)
+[david-dm-dev-image]:https://david-dm.org/kenokabe/timeengine/dev-status.svg
 
+[https://www.npmjs.com/package/timeengine](https://www.npmjs.com/package/timeengine)
+
+[https://www.npmjs.com/package/timeengine-react](https://www.npmjs.com/package/timeengine-react)
+
+[https://github.com/TimeEngine/timeengine](https://github.com/TimeEngine/timeengine)
+
+[https://github.com/TimeEngine/timeengine-react](https://github.com/TimeEngine/timeengine-react)
+
+From version 5.0.0, the project repository has moved to the project page.
+
+## See the Demo and Documentation of the project:
+
+## [http://timeengine.github.io](http://timeengine.github.io)
 
 # Before
 
