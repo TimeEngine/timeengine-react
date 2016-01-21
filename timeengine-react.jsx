@@ -9,7 +9,7 @@
   //var __ = require('timeengine');
 
   //***React state with life cycle is stateless sequence*****
-  const __Component = (__seqEl) => {
+  const __Element = (__seqEl) => {
 
     class SeqComponent extends React.Component {
       constructor() {
@@ -36,9 +36,9 @@
   //------------------
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = __Component;
+    module.exports = __Element;
   } else {
-    window.__Component = __Component;
+    window.__Element = __Element;
   }
 
 })();

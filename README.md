@@ -52,14 +52,14 @@ var Timer = React.createClass({
 
 # After
 
-### A Stateless functional Component (Single statement code!!)
+### A Stateless functional Element (Single statement code!!)
 
 ```js
 // `.intervalSeq` is to map Immutable-js infinite Sequence
 //                       onto TimeEngine infinite Sequence
 // map natural numbers sequence onto intervalSeq(1000)
-const TimerComponent = () => {
-  return __Component(__
+const TimerElement = () => {
+  return __Element(__
     .intervalSeq(Immutable.Range(), 1000)
     .__((count) => (__.log.t = count)) //console.log
     .__((count) => (<div>Timer : {count}</div>)));
@@ -70,7 +70,7 @@ const TimerComponent = () => {
 ![](http://timeengine.github.io/images/formula.png)
 
 ```js
-  const PhysicsComponent = () => {
+  const PhysicsElement = () => {
     //MKS system of units
     const V0 = 90.0; // m/s
     const DEG = 45; //degree
@@ -92,7 +92,7 @@ const TimerComponent = () => {
         cx = {50 + x * Drawscale} cy = {250 - y * Drawscale}/>
         </svg>
       </div>));
-    return __Component(__seqEl);
+    return __Element(__seqEl);
   };
 ```
 
