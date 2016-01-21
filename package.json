@@ -1,7 +1,7 @@
 {
   "name": "timeengine-react",
-  "version": "2.0.1",
-  "description": "TimeEngine Extension for Stateless React programming without props and state",
+  "version": "2.0.2",
+  "description": "TimeEngine Extension to provide first class Element 'over time' without props and state, even without Component for Stateless React programming",
   "main": "timeengine-react.js",
   "scripts": {
     "test": "babel timeengine-react.jsx -o timeengine-react.js;"
