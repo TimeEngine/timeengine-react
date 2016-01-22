@@ -5,8 +5,8 @@
 (() => {
   'use strict';
 
-  //var React = require('react');
-  //var __ = require('timeengine');
+   var React = require('react');
+   var __ = require('timeengine');
 
   //***React state with life cycle is stateless sequence*****
   const __Element = (__seqEl) => {

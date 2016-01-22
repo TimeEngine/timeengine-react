@@ -81,8 +81,8 @@ function _inherits(subClass, superClass) {
 (function() {
   'use strict';
 
-  //var React = require('react');
-  //var __ = require('timeengine');
+   var React = require('react');
+   var __ = require('timeengine');
 
   //***React state with life cycle is stateless sequence*****
   var __Element = function __Element(__seqEl) {
