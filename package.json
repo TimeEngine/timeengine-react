@@ -1,6 +1,6 @@
 {
   "name": "timeengine-react",
-  "version": "2.0.5",
+  "version": "2.1.0",
   "description": "TimeEngine Extension to provide first class Element 'over time' without props and state, even without Component for Stateless React programming",
   "main": "timeengine-react.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "babel-preset-react": "^6.3.13",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.15.0",
-    
+
     "webpack": "^1.12.11"
   }
 }

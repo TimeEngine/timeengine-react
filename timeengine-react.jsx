@@ -1,13 +1,19 @@
-/*global React __ Immutable __Element*/
+/*global React timeengine __ Immutable __Element*/
 
 //this file need to bre transpiled to js
 //npm test
 (() => {
   'use strict';
 
-   var React = require('react');
-   var __ = require('timeengine');
-
+  let React;
+  let __;
+  if (typeof module !== 'undefined' && module.exports) {
+    React = require("react");
+    __ = require("timeengine");
+  } else {
+    React = window.React;
+    __ = window.__;
+  }
   //***React state with life cycle is stateless sequence*****
   const __Element = (__seqEl) => {
 
