@@ -1,6 +1,6 @@
 /*global React timeengine __ Immutable __Element*/
 
-//this file need to bre transpiled to js
+//this file need to be transpiled to js
 //npm test
 (() => {
   'use strict';
@@ -15,7 +15,7 @@
     __ = window.__;
   }
   //***React state with life cycle is stateless sequence*****
-  const __Element = (__seqEl) => {
+  const __Element = (__seqEl, f = () => 0) => {
 
     class SeqComponent extends React.Component {
       constructor() {
@@ -27,6 +27,7 @@
           this.setState({
             seqEl: val
           });
+          f(this);
         });
       }
       componentWillUnmount() {
