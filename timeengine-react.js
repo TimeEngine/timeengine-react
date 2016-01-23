@@ -82,6 +82,7 @@ function _inherits(subClass, superClass) {
   'use strict';
 
   var React = undefined;
+  var ReactDOM = undefined;
   var __ = undefined;
   if (typeof module !== 'undefined' && module.exports) {
     React = require("react");

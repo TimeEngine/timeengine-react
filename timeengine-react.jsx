@@ -6,6 +6,7 @@
   'use strict';
 
   let React;
+  let ReactDOM;
   let __;
   if (typeof module !== 'undefined' && module.exports) {
     React = require("react");
