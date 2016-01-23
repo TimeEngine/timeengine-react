@@ -1,4 +1,4 @@
-/*global React timeengine __ Immutable __Element*/
+/*global React ReactDOM timeengine __ Immutable __Element*/
 
 //this file need to be transpiled to js
 //npm test
@@ -85,6 +85,7 @@ function _inherits(subClass, superClass) {
   var __ = undefined;
   if (typeof module !== 'undefined' && module.exports) {
     React = require("react");
+    ReactDOM = require("react-dom");
     __ = require("timeengine");
   } else {
     React = window.React;
@@ -112,11 +113,15 @@ function _inherits(subClass, superClass) {
           _this.setState({
             seqEl: val
           });
-          f(_this);
         });
       }
 
       _createClass(SeqComponent, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+          f(ReactDOM.findDOMNode(this).children[0]);
+        }
+      }, {
         key: 'componentWillUnmount',
         value: function componentWillUnmount() {
           __seqEl.done = 1;
