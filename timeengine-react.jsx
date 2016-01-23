@@ -1,4 +1,4 @@
-/*global React ReactDOM timeengine __ Immutable __Element*/
+/*global React timeengine __ Immutable __Element*/
 
 //this file need to be transpiled to js
 //npm test
@@ -18,6 +18,7 @@
   }
   //***React state with life cycle is stateless sequence*****
   const __Element = (__seqEl, f = () => 0) => {
+
     class SeqComponent extends React.Component {
       constructor() {
         super();
@@ -28,10 +29,8 @@
           this.setState({
             seqEl: val
           });
+          f(ReactDOM.findDOMNode(this).children[0]);
         });
-      }
-      componentDidMount() {
-        f(ReactDOM.findDOMNode(this).children[0]);
       }
       componentWillUnmount() {
         __seqEl.done = 1;
@@ -40,7 +39,6 @@
         return (<span>{this.state.seqEl}</span>);
       };
     }
-
     return (<SeqComponent/>);
   };
   //------------------

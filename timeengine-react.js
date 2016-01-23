@@ -1,4 +1,4 @@
-/*global React ReactDOM timeengine __ Immutable __Element*/
+/*global React timeengine __ Immutable __Element*/
 
 //this file need to be transpiled to js
 //npm test
@@ -114,15 +114,11 @@ function _inherits(subClass, superClass) {
           _this.setState({
             seqEl: val
           });
+          f(ReactDOM.findDOMNode(_this).children[0]);
         });
       }
 
       _createClass(SeqComponent, [{
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-          f(ReactDOM.findDOMNode(this).children[0]);
-        }
-      }, {
         key: 'componentWillUnmount',
         value: function componentWillUnmount() {
           __seqEl.done = 1;
