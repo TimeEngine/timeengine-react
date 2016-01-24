@@ -28,7 +28,6 @@ From version 5.0.0, the project repository has moved to the project page.
 ### A Stateful Component
 
 ```js
-
 var Timer = React.createClass({
   getInitialState: function() {
     return {secondsElapsed: 0};
@@ -56,13 +55,12 @@ var Timer = React.createClass({
 
 ```js
 // `.intervalSeq` is to map Immutable-js infinite Sequence
-//                       onto TimeEngine infinite Sequence
-// map natural numbers sequence onto intervalSeq(1000)
-const TimerElement = () => {
-  return __Element(__
+//                       on TimeEngine infinite Sequence
+// map natural numbers sequence on intervalSeq(1000)
+const TimerElement = () => __Element(__
     .intervalSeq(Immutable.Range(), 1000)
     .__((count) => (__.log.t = count)) //console.log
-    .__((count) => (<div>Timer : {count}</div>)));
+    .__((count) => (<div>{"Timer : "}{count}</div>)));
 };
 ```
 
