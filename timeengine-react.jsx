@@ -14,6 +14,7 @@
     __ = require("timeengine");
   } else {
     React = window.React;
+    ReactDOM = window.ReactDOM;
     __ = window.__;
   }
   //***React state with life cycle is stateless sequence*****
